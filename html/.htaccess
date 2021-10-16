@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^$ /feedignition/index.php [L]
+RewriteCond $1 !^(index\.php|images|css|js|robots\.txt|favicon\.ico)
+RewriteRule ^(.*)$ /feedignition/index.php/$1 [L]
